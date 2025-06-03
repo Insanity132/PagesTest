@@ -1,0 +1,46 @@
+.josefin-sans-quartet {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+--green-1: #274e13;
+--green-2: #6aa84f;
+--green-3: #d9ead3;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+    font-family: "Josefin Sans", Times, serif;
+}
+
+div.header {
+    background-color: var(--green-1);
+    height: 50px;
+    display: table;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+div.button {
+    padding: 5px;
+    display: table-cell;
+}
+
+a.header {
+    background-color: var(--green-3);
+    font-family: "Josefin Sans", Times, serif;
+    border-radius: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
