@@ -27,15 +27,27 @@
     </div>
     <div class="header" style="background-color: var(--green-2); height: 65px; position: relative; top: -0.75px"></div>
 
-    <div style="position:absolute; transform: skewY(-20deg); width: 50%; height: 64px; background-color: aqua;"></div>
-    <div style="position:absolute; transform: skewY(20deg); width: 50%; height: 64px; left: 50%; background-color: orange;"></div>
+    <!--<div id="skewed" class="skewed" style="transform: skewY(-20deg); background-color: aqua"></div>
+    <div id="skewed" class="skewed" style="transform: skewY(20deg); left: 50%; background-color: orange"></div>-->
+    <div style="display: flex; flex-direction: row;">
+        <img src="./images/skew-sonic.svg" style="position: relative; width: 50%; height: auto; margin: 0;"></img>
+        <img src="./images/skew-tails.svg" style="position: relative; width: 50%; height: auto; margin: 0; transform: scaleY(-1)"></img>
+    </div>
+    <img src="./images/bg.png" style="width: 100%; height: auto"></img>
+    <div style="display: flex; flex-direction: row;">
+        <img src="./images/skew-knuckles.svg" style="position: relative; width: 50%; height: auto; margin: 0; transform: scaleY(-1)"></img>
+        <img src="./images/skew-amy.svg" style="position: relative; width: 50%; height: auto; margin: 0;"></img>
+    </div>
 
     <h1>Hi guys!</h1>
     <p>So uh</p>
     <p>Now I just make a website, I guess!</p>
-    <img src="./images/portrait-eggman.png" alt="Dr. Eggman" width="500" height="500">
+    <img src="./images/portrait-eggman.png" alt="Dr. Eggman" width="500" height="500" style="display:block; margin: auto">
     <br></br>
     <p>egg</p>
     <p>“Believe in your own abilities, but keep your mind open because you can’t do everything as you are now. You must open yourself up to new opportunities, new challenges, and new friendships. Take the world head-on knowing that your team is right behind you.”</p>
 </body>
+<script>
+    document.getElementById("skewed").style.top -= 100;
+</script>
 </html>
