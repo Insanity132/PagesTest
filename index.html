@@ -27,16 +27,30 @@
     </div>
     <div class="header" style="background-color: var(--green-2); height: 65px; position: relative; top: -0.75px"></div>
 
-    <!--<div id="skewed" class="skewed" style="transform: skewY(-20deg); background-color: aqua"></div>
-    <div id="skewed" class="skewed" style="transform: skewY(20deg); left: 50%; background-color: orange"></div>-->
-    <div style="display: flex; flex-direction: row;">
-        <img src="./images/skew-sonic.svg" style="position: relative; width: 50%; height: auto; margin: 0;"></img>
-        <img src="./images/skew-tails.svg" style="position: relative; width: 50%; height: auto; margin: 0; transform: scaleY(-1)"></img>
-    </div>
-    <img src="./images/bg.png" style="width: 100%; height: auto"></img>
-    <div style="display: flex; flex-direction: row;">
-        <img src="./images/skew-knuckles.svg" style="position: relative; width: 50%; height: auto; margin: 0; transform: scaleY(-1)"></img>
-        <img src="./images/skew-amy.svg" style="position: relative; width: 50%; height: auto; margin: 0;"></img>
+    <!-- Titlecard and background -->
+    <div class="container" style="border: 0; z-index: -999; position: relative; width: 100%; height: calc(60vw); display: flex; justify-content: center">
+        <div style="display: flex; flex-direction: row; position: absolute; width: 100%">
+            <div style="position: relative; width: 50%; margin: 0;">
+                <img src="./images/skew-mask.svg" style="position: absolute; width: 100%; height: auto; margin: 0"></img>
+                <img src="./images/skew-sonic.svg" style="position: absolute; width: 100%; height: auto; margin: 0"></img>
+            </div>
+            <div style="position: relative; width: 50%; margin: 0;">
+                <img src="./images/skew-mask.svg" style="position: absolute; width: 100%; height: auto; margin: 0; transform: scaleX(-1)"></img>
+                <img src="./images/skew-tails.svg" style="position: absolute; width: 100%; height: auto; margin: 0; transform: scaleX(-1)"></img>
+            </div>
+        </div>
+        <img src="./images/titlecard.png" style="width: 75%; height: auto; position: absolute; top: 50%; transform: translateY(-50%); z-index: -1; margin: 0 auto;"></img>
+        <img src="./images/bg.png" style="width: auto; height: 100%; position: absolute; z-index: -2; margin: auto;"></img>
+        <div style="margin: 0; display: flex; flex-direction: row; position: absolute; width: 100%; top: 100%">
+            <div style="position: relative; width: 50%; margin: 0;">
+                <img src="./images/skew-mask.svg" style="position: absolute; width: 100%; height: auto; margin: 0; transform: scaleY(-1) translateY(100%)"></img>
+                <img src="./images/skew-sonic.svg" style="position: absolute; width: 100%; height: auto; margin: 0; transform: scaleY(-1) translateY(100%)"></img>
+            </div>
+            <div style="position: relative; width: 50%; margin: 0;">
+                <img src="./images/skew-mask.svg" style="position: absolute; width: 100%; height: auto; margin: 0; transform: scaleX(-1) translateY(-100%)"></img>
+                <img src="./images/skew-tails.svg" style="position: absolute; width: 100%; height: auto; margin: 0; transform: scaleX(-1) translateY(-100%)"></img>
+            </div>
+        </div>
     </div>
 
     <h1>Hi guys!</h1>
@@ -48,6 +62,6 @@
     <p>“Believe in your own abilities, but keep your mind open because you can’t do everything as you are now. You must open yourself up to new opportunities, new challenges, and new friendships. Take the world head-on knowing that your team is right behind you.”</p>
 </body>
 <script>
-    document.getElementById("skewed").style.top -= 100;
+    
 </script>
 </html>
